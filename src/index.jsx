@@ -5,11 +5,16 @@ import Header from './components/Header';
 import App from './App';
 import About from './components/About';
 import NotFound from './components/NotFound';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  HashRouter,
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <HashRouter basename="/">
       <Header />
       <Switch>
         <Route path="/" component={App} exact />
@@ -18,7 +23,7 @@ ReactDOM.render(
         <Route path="/about" component={About} />
         <Route path="/*" component={NotFound} />
       </Switch>
-    </Router>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
