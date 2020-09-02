@@ -9,7 +9,7 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={`${process.env.PUBLIC_URL}/`}>
       <Header />
       <Switch>
         <Route path="/" component={App} exact />
