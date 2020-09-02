@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: firebrick;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.primary-nav {
+  display: flex;
+}
+
+.primary-nav__link {
+  text-decoration: none;
+  color: midnightblue;
+  padding: 0.625rem;
+  border-bottom: 2px solid white;
+}
+
+.primary-nav__link.active {
+  border-bottom: 2px solid black;
+}
+
+.flex-columns {
+  display: flex;
+}
+.flex-columns__left {
+  width: 75%;
+}
+.flex-columns__right {
+  width: 25%;
+}
+
+.active-pokemon__img {
+  transform: scale(1.5);
+  image-rendering: pixelated;
+}
+
+.pokemon-list {
+}
+
+.pokemon-list__item {
+}
+
+.pokemon-list__link {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
